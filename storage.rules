@@ -1,0 +1,10 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // WARNING: This rule allows full read/write access.
+    // It's intended for local emulator use only. Do NOT deploy to production.
+    match /{allPaths=**} {
+      allow read, write: if true;
+    }
+  }
+}
