@@ -14,7 +14,10 @@ Supermall is a web-based platform designed to simplify shop, product, and offer 
 6. Logging System: Every action (add/update/delete) logged for transparency.
 7. Dynamic UI: Responsive and modular interface built with HTML, CSS, and JS.
 
-## Setup & Run (Local)
+## Project Setup & Execution
+live site link: https://shivanie07.github.io/Supermall-website/
+
+Local setup(Optional)
 1. Clone or download the repository:
    bash
    git clone https://github.com/shivanie07/Supermall-website
@@ -27,3 +30,4 @@ Supermall is a web-based platform designed to simplify shop, product, and offer 
 Emulator URLs
   • Auth Emulator: http://localhost:9099 
   • Firestore Emulator: http://localhost:8085
+
