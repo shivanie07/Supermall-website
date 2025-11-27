@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = passwordInput.value;
         if (!email || !password) return showAuthMessage("Email & Password required", true);
         try {
-            const userCred = await authModule.signup(email, password);
+            const userCred = await signup(email, password);
             currentUser = userCred.user;
             userInfo.textContent = `Logged in as ${currentUser.email}`;
             shopSection.style.display = '';
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     logoutBtn?.addEventListener('click', async (e) => {
         try {
-            await authModule.logout();
+            await logout();
             currentUser = null;
             selectedShopId = null;
             selectedShopName = null;
